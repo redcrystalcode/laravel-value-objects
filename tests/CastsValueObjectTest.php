@@ -98,4 +98,29 @@ class CastsValueObjectTest extends TestCase
         $this->assertInstanceOf(EmailValueObject::class, $user->email);
         $this->assertEquals($email, $user->email->toScalar());
     }
+
+    public function testModelToArrayWithValueObjects()
+    {
+        $user = new UserModel();
+
+        $user->email = $email = 'user@example.com';
+
+        $array = $user->toArray();
+
+        $this->assertArrayHasKey('email', $array);
+        $this->assertTrue(is_string($array['email']));
+        $this->assertFalse($array['email'] instanceof EmailValueObject);
+    }
+
+    public function testModelToJsonWithValueObjects()
+    {
+        $user = new UserModel();
+
+        $user->email = $email = 'user@example.com';
+
+        $json = $user->toJson();
+
+        $this->assertJson($json);
+        $this->assertJsonStringEqualsJsonString(json_encode(['email' => $email]), $json);
+    }
 }
