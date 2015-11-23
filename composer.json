@@ -1,0 +1,26 @@
+{
+    "name": "redcrystal/cast",
+    "description": "Cast your model attributes to value objects!",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zain Mehdi",
+            "email": "szainmehdi@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RedCrystal\\Cast\\": "src/"
+        },
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "require": {
+        "php": ">=5.4",
+        "laravel/framework": ">=4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    }
+}
