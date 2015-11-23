@@ -1,6 +1,6 @@
 {
     "name": "redcrystal/cast",
-    "description": "Cast your model attributes to value objects!",
+    "description": "Laravel Value Objects: Cast your Eloquent model attributes to value objects with ease!",
     "license": "MIT",
     "authors": [
         {
