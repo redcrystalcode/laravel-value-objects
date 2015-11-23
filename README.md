@@ -1,5 +1,7 @@
 ## Laravel Value Objects
-[![Latest Stable Version](https://poser.pugx.org/redcrystal/cast/version.png)](https://packagist.org/packages/redcrystal/cast) [![Total Downloads](https://poser.pugx.org/redcrystal/cast/d/total.png)](https://packagist.org/packages/redcrystal/cast)
+[![Build Status](https://travis-ci.org/redcrystalcode/laravel-value-objects.svg?branch=master)](https://travis-ci.org/redcrystal/cast)
+[![Latest Stable Version](https://poser.pugx.org/redcrystal/cast/version.png)](https://packagist.org/packages/redcrystal/cast)
+[![Total Downloads](https://poser.pugx.org/redcrystal/cast/d/total.png)](https://packagist.org/packages/redcrystal/cast)
 
 
 Cast your Eloquent model attributes to value objects with ease!
