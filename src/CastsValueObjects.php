@@ -23,6 +23,11 @@ trait CastsValueObjects
             // Allow other mutators and such to do their work first.
             $value = parent::getAttribute($key);
 
+            // Don't cast empty $value.
+            if ($value === null || $value === '') {
+                return null;
+            }
+
             // Cache the instantiated value for future access.
             // This allows tests such as ($model->casted === $model->casted) to be true.
             if (!$this->isValueObjectCached($key)) {

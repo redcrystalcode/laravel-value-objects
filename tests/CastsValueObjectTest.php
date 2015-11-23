@@ -123,4 +123,20 @@ class CastsValueObjectTest extends TestCase
         $this->assertJson($json);
         $this->assertJsonStringEqualsJsonString(json_encode(['email' => $email]), $json);
     }
+
+    public function testNullValuesDontGetCast()
+    {
+        $user = new UserModel();
+
+        $this->assertNull($user->email);
+    }
+
+    public function testEmptyStringValuesDontGetCast()
+    {
+        $user = new UserModel();
+
+        $user->setInternalAttributes(['email' => '']);
+
+        $this->assertNull($user->email);
+    }
 }
