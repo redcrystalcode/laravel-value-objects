@@ -8,7 +8,7 @@ Cast your Eloquent model attributes to value objects with ease!
 
 ### Requirements
 
-This package requires PHP >= 5.6. Using the latest version of PHP is highly recommended. Laravel 4.x and 5.x are supported.
+This package requires PHP >= 5.4. Using the latest version of PHP is highly recommended. Laravel 4.x and 5.x are supported.
 
 ### Install
 
