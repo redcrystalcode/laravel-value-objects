@@ -12,7 +12,7 @@ trait CastsValueObjects
     protected $cachedObjects = [];
 
     /**
-     * @param $key
+     * @param string $key
      *
      * @return mixed
      */
@@ -44,8 +44,8 @@ trait CastsValueObjects
     }
 
     /**
-     * @param $key
-     * @param $value
+     * @param string $key
+     * @param mixed $value
      */
     public function setAttribute($key, $value)
     {
@@ -78,7 +78,7 @@ trait CastsValueObjects
     }
 
     /**
-     * @param $key
+     * @param string $key
      *
      * @return mixed
      */
@@ -90,7 +90,7 @@ trait CastsValueObjects
     }
 
     /**
-     * @param $key
+     * @param string $key
      * @param ValueObject $object
      */
     private function cacheValueObject($key, ValueObject $object)
@@ -99,7 +99,7 @@ trait CastsValueObjects
     }
 
     /**
-     * @param $key
+     * @param string $key
      */
     private function invalidateValueObjectCache($key)
     {
@@ -107,7 +107,7 @@ trait CastsValueObjects
     }
 
     /**
-     * @param $key
+     * @param string $key
      *
      * @return bool
      */
@@ -117,7 +117,7 @@ trait CastsValueObjects
     }
 
     /**
-     * @param $key
+     * @param string $key
      *
      * @return ValueObject
      */
